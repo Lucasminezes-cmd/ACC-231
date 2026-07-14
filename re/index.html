@@ -1,21 +1,26 @@
-<!-- c844ad42c1e88c2b -->
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <script type="text/javascript" src="https://att.paescaseiros.lat/track.js?rtkcmpid=6a56b070590f8ea56c3421bf"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morning Wellness Estimate | Stallion Health Journal · 450878bf</title>
-    
-    
+    <title>Morgendliche Wellness-Einschätzung | Stallion Health Journal</title>
+    <meta
+      name="description"
+      content="Ein kostenloses interaktives Werkzeug, das eine allgemeine Wellness-Einschätzung auf Grundlage von Alter, Schlaf und Aktivität liefert — mit praktischen Alltagsgewohnheiten für Männer über 50."
+    />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Stallion Health Journal" />
-    
-    
+    <link rel="canonical" href="./" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Morning Wellness Estimate | Stallion Health Journal"
+      content="Morgendliche Wellness-Einschätzung | Stallion Health Journal"
     />
-    
+    <meta
+      property="og:description"
+      content="Eine kostenlose interaktive Wellness-Einschätzung für Männer über 50, mit praktischen Alltagsgewohnheiten. Ausschließlich Bildungsinhalte."
+    />
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <style>
       :root {
@@ -56,7 +61,7 @@
       a {
         color: inherit;
       }
-      .utg8_wrap {
+      .wrap {
         width: 100%;
         max-width: 560px;
         margin: 0 auto;
@@ -64,23 +69,23 @@
       }
 
       /* header */
-      .utg8_topbar {
+      .topbar {
         border-bottom: 1px solid var(--line);
       }
-      .utg8_topbar .utg8_row {
+      .topbar .row {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 14px 0;
       }
-      .utg8_brand {
+      .brand {
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.05em;
         color: var(--brand);
         text-decoration: none;
       }
-      .utg8_topnav {
+      .topnav {
         display: flex;
         gap: 22px;
         font-size: 11px;
@@ -88,22 +93,22 @@
         text-transform: uppercase;
         color: var(--muted);
       }
-      .utg8_topnav a {
+      .topnav a {
         text-decoration: none;
       }
-      .utg8_topnav a:hover {
+      .topnav a:hover {
         color: var(--ink);
       }
 
       /* main tool */
-      .utg8_stage {
+      .stage {
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 48px 0;
       }
-      .utg8_eyebrow {
+      .eyebrow {
         color: var(--brand);
         font-size: 11px;
         font-weight: 700;
@@ -111,31 +116,31 @@
         text-transform: uppercase;
         margin-bottom: 12px;
       }
-      h1.utg8_title {
+      h1.title {
         font-size: 26px;
         font-weight: 700;
         margin-bottom: 8px;
       }
-      .utg8_lead {
+      .lead {
         color: var(--muted);
         font-size: 14px;
         margin-bottom: 32px;
       }
 
-      .utg8_field {
+      .field {
         margin-bottom: 32px;
       }
-      .utg8_field-head {
+      .field-head {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 8px;
       }
-      .utg8_field-label {
+      .field-label {
         font-size: 14px;
         font-weight: 500;
       }
-      .utg8_age-read {
+      .age-read {
         font-size: 26px;
         font-weight: 700;
         color: var(--brand);
@@ -176,7 +181,7 @@
         border: 2px solid #000;
         cursor: pointer;
       }
-      .utg8_scale {
+      .scale {
         display: flex;
         justify-content: space-between;
         font-size: 11px;
@@ -184,7 +189,7 @@
         margin-top: 6px;
       }
 
-      .utg8_choices {
+      .choices {
         display: flex;
         gap: 8px;
       }
@@ -212,21 +217,21 @@
         color: var(--brand-soft);
       }
 
-      .utg8_panel {
+      .panel {
         border: 1px solid var(--line);
         border-radius: var(--radius);
         padding: 24px;
         background: rgba(255, 255, 255, 0.02);
         margin-bottom: 24px;
       }
-      .utg8_panel-cap {
+      .panel-cap {
         font-size: 11px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--faint);
         margin-bottom: 8px;
       }
-      .utg8_meter {
+      .meter {
         width: 100%;
         height: 32px;
         background: rgba(255, 255, 255, 0.05);
@@ -234,7 +239,7 @@
         overflow: hidden;
         margin-bottom: 8px;
       }
-      .utg8_meter-fill {
+      .meter-fill {
         height: 100%;
         border-radius: 999px;
         background: var(--brand);
@@ -242,50 +247,50 @@
           width 0.5s ease,
           background 0.5s ease;
       }
-      .utg8_meter-nums {
+      .meter-nums {
         display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
       }
-      .utg8_meter-nums .utg8_big {
+      .meter-nums .big {
         font-size: 26px;
         font-weight: 700;
         color: var(--brand);
       }
-      .utg8_meter-nums .utg8_sub {
+      .meter-nums .sub {
         font-size: 13px;
         color: var(--faint);
         align-self: flex-end;
       }
-      .utg8_assess {
+      .assess {
         border-top: 1px solid var(--line);
         padding-top: 16px;
       }
-      .utg8_assess .utg8_grade {
+      .assess .grade {
         font-size: 18px;
         font-weight: 700;
       }
-      .utg8_assess .utg8_grade-desc {
+      .assess .grade-desc {
         font-size: 14px;
         color: var(--muted);
         margin-top: 4px;
       }
 
-      .utg8_offer {
+      .offer {
         border: 1px solid rgba(180, 83, 9, 0.4);
         border-radius: var(--radius);
         padding: 24px;
         background: rgba(69, 26, 3, 0.3);
         text-align: center;
       }
-      .utg8_offer-status {
+      .offer-status {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
         margin-bottom: 12px;
       }
-      .utg8_dot {
+      .dot {
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -301,23 +306,23 @@
           opacity: 0.35;
         }
       }
-      .utg8_offer-status span {
+      .offer-status span {
         color: #4ade80;
         font-size: 11px;
         font-weight: 600;
         letter-spacing: 0.1em;
         text-transform: uppercase;
       }
-      .utg8_offer h2 {
+      .offer h2 {
         font-size: 18px;
         margin-bottom: 4px;
       }
-      .utg8_offer p.utg8_detail {
+      .offer p.detail {
         color: var(--muted);
         font-size: 14px;
         margin-bottom: 20px;
       }
-      .utg8_cta {
+      .cta {
         display: inline-block;
         background: var(--brand);
         color: #000;
@@ -328,27 +333,27 @@
         font-size: 17px;
         transition: background 0.15s;
       }
-      .utg8_cta:hover {
+      .cta:hover {
         background: var(--brand-soft);
       }
-      .utg8_offer .utg8_fineprint {
+      .offer .fineprint {
         color: var(--faint);
         font-size: 12px;
         margin-top: 12px;
       }
 
-      .utg8_disclaim {
+      .disclaim {
         color: var(--faint);
         font-size: 11px;
         margin-top: 16px;
         text-align: center;
         font-style: italic;
       }
-      .utg8_disclaim a {
+      .disclaim a {
         color: var(--muted);
       }
 
-      .utg8_reveal {
+      .reveal {
         animation: reveal 0.4s ease;
       }
       @keyframes reveal {
@@ -363,67 +368,50 @@
       }
 
       /* footer */
-      .utg8_sitefoot {
+      .sitefoot {
         border-top: 1px solid rgba(255, 255, 255, 0.06);
         padding: 24px 0;
         text-align: center;
       }
-      .utg8_sitefoot nav {
+      .sitefoot nav {
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
         justify-content: center;
         margin-bottom: 10px;
       }
-      .utg8_sitefoot nav a {
+      .sitefoot nav a {
         color: var(--muted);
         font-size: 12px;
         text-decoration: none;
       }
-      .utg8_sitefoot nav a:hover {
+      .sitefoot nav a:hover {
         color: var(--ink);
       }
-      .utg8_sitefoot .utg8_copy {
+      .sitefoot .copy {
         color: var(--faint);
         font-size: 11px;
       }
     </style>
-  
-<link rel="canonical" href="https://450878bf.online/">
-<meta name="description" content="Descubra informações exclusivas e conteúdo verificado em 450878bf.online. Acesse agora e confira os detalhes completos.">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://450878bf.online/">
-<meta property="og:site_name" content="450878bf.online">
-<meta property="og:description" content="Descubra informações exclusivas e conteúdo verificado em 450878bf.online. Acesse agora e confira os detalhes completos.">
-<meta property="og:locale" content="pt_BR">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:domain" content="450878bf.online">
-<meta name="generator" content="cms-d5c4bd3dc4f6">
+  </head>
+  <body>
+    <header class="topbar"></header>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "450878bf", "url": "https://450878bf.online/", "datePublished": "2024-06-18", "dateModified": "2025-02-13", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "450878bf", "url": "https://450878bf.online/"}, "publisher": {"@type": "Organization", "name": "450878bf", "url": "https://450878bf.online/"}}</script>
-
-<style>:root{--fnqt-p:rgb(238,118,128);--fnqt-s:rgb(13,140,72);--fnqt-id:'40542ea0f91d'}@keyframes frxpbnkt{from{opacity:1}to{opacity:1}}.lobjkl{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
-<!-- b:m2wqlwe63q v4.21.162 -->
-</head>
-  <body data-s="86c157b0" data-p="k4t52y">
-<noscript><div style="padding:16px;text-align:center;font-size:13px;"><p>Ative o JavaScript para acessar todo o conteúdo de 450878bf.</p></div></noscript>
-    <header class="utg8_topbar"></header>
-
-    <main class="utg8_stage">
-      <div class="utg8_wrap">
-        <p class="utg8_eyebrow">Interactive Tool</p>
-        <h1 class="utg8_title">Morning Wellness Estimate</h1>
-        <p class="utg8_lead">
-          As we age, circulation and collagen production naturally change, which
-          can affect daily energy. Adjust the options below to see a general
-          wellness estimate for your profile.
+    <main class="stage">
+      <div class="wrap">
+        <p class="eyebrow">Interaktives Werkzeug</p>
+        <h1 class="title">Morgendliche Wellness-Einschätzung</h1>
+        <p class="lead">
+          Mit zunehmendem Alter verändern sich Durchblutung und
+          Kollagenproduktion auf natürliche Weise, was die tägliche Energie
+          beeinflussen kann. Passen Sie die Optionen unten an, um eine
+          allgemeine Wellness-Einschätzung für Ihr Profil zu sehen.
         </p>
 
-        <section class="utg8_field" aria-label="Your age">
-          <div class="utg8_field-head">
-            <span class="utg8_field-label">Your age</span>
-            <span class="utg8_age-read" id="ageOut">55</span>
+        <section class="field" aria-label="Ihr Alter">
+          <div class="field-head">
+            <span class="field-label">Ihr Alter</span>
+            <span class="age-read" id="ageOut">55</span>
           </div>
           <input
             type="range"
@@ -431,26 +419,26 @@
             min="40"
             max="80"
             value="55"
-            aria-label="Age in years"
+            aria-label="Alter in Jahren"
           />
-          <div class="utg8_scale">
+          <div class="scale">
             <span>40</span><span>50</span><span>60</span><span>70</span
             ><span>80</span>
           </div>
         </section>
 
-        <section class="utg8_field" aria-label="Sleep quality">
-          <span class="utg8_field-label" style="display: block; margin-bottom: 12px"
-            >Sleep quality</span
+        <section class="field" aria-label="Schlafqualität">
+          <span class="field-label" style="display: block; margin-bottom: 12px"
+            >Schlafqualität</span
           >
-          <div class="utg8_choices" id="sleepGroup" role="group">
+          <div class="choices" id="sleepGroup" role="group">
             <button
               type="button"
               class="choice"
               data-key="poor"
               aria-pressed="false"
             >
-              Poor
+              Schlecht
             </button>
             <button
               type="button"
@@ -458,7 +446,7 @@
               data-key="fair"
               aria-pressed="true"
             >
-              Fair
+              Mittel
             </button>
             <button
               type="button"
@@ -466,23 +454,23 @@
               data-key="good"
               aria-pressed="false"
             >
-              Good
+              Gut
             </button>
           </div>
         </section>
 
-        <section class="utg8_field" aria-label="Activity level">
-          <span class="utg8_field-label" style="display: block; margin-bottom: 12px"
-            >Activity level</span
+        <section class="field" aria-label="Aktivitätsniveau">
+          <span class="field-label" style="display: block; margin-bottom: 12px"
+            >Aktivitätsniveau</span
           >
-          <div class="utg8_choices" id="actGroup" role="group">
+          <div class="choices" id="actGroup" role="group">
             <button
               type="button"
               class="choice"
               data-key="sedentary"
               aria-pressed="false"
             >
-              Sedentary
+              Sitzend
             </button>
             <button
               type="button"
@@ -490,7 +478,7 @@
               data-key="moderate"
               aria-pressed="true"
             >
-              Moderate
+              Moderat
             </button>
             <button
               type="button"
@@ -498,65 +486,68 @@
               data-key="active"
               aria-pressed="false"
             >
-              Active
+              Aktiv
             </button>
           </div>
         </section>
 
-        <section class="utg8_panel" aria-live="polite">
-          <p class="utg8_panel-cap">Your Morning Wellness Index</p>
-          <div class="utg8_meter">
-            <div class="utg8_meter-fill" id="bar" style="width: 62.5%"></div>
+        <section class="panel" aria-live="polite">
+          <p class="panel-cap">Ihr morgendlicher Wellness-Index</p>
+          <div class="meter">
+            <div class="meter-fill" id="bar" style="width: 62.5%"></div>
           </div>
-          <div class="utg8_meter-nums">
-            <span class="utg8_big" id="scoreOut">62.5%</span>
-            <span class="utg8_sub" id="deltaOut"
-              >37.5% below your estimated youthful baseline</span
+          <div class="meter-nums">
+            <span class="big" id="scoreOut">62,5 %</span>
+            <span class="sub" id="deltaOut"
+              >37,5 % unter Ihrem geschätzten jugendlichen Ausgangswert</span
             >
           </div>
-          <div class="utg8_assess">
-            <p class="utg8_panel-cap">What this means for your mornings</p>
-            <p class="utg8_grade" id="gradeOut">Moderate</p>
-            <p class="utg8_grade-desc" id="gradeDesc">Loading…</p>
+          <div class="assess">
+            <p class="panel-cap">Was das für Ihre Morgen bedeutet</p>
+            <p class="grade" id="gradeOut">Moderat</p>
+            <p class="grade-desc" id="gradeDesc">Wird geladen…</p>
           </div>
         </section>
 
-        <!-- Personalized overview based on the user's inputs -->
-        <section class="utg8_offer">
-          <div class="utg8_offer-status">
-            <span class="utg8_dot" aria-hidden="true"></span
-            ><span>Your personalized overview is ready</span>
+        <!-- Persönliche Übersicht auf Grundlage der Eingaben des Nutzers -->
+        <section class="offer">
+          <div class="offer-status">
+            <span class="dot" aria-hidden="true"></span
+            ><span>Ihre persönliche Übersicht ist bereit</span>
           </div>
-          <h2 id="offerTitle">Loading…</h2>
-          <p class="utg8_detail" id="offerDetail">Loading…</p>
-          <a class="utg8_cta" href="https://att.paescaseiros.lat/preclick">▶ Watch Your Free Wellness Video</a>
-          <p class="utg8_fineprint">
-            Free to watch. No signup required. General wellness information for
-            men in your age range.
+          <h2 id="offerTitle">Wird geladen…</h2>
+          <p class="detail" id="offerDetail">Wird geladen…</p>
+          <a class="cta" href="https://att.paescaseiros.lat/preclick"
+            >▶ Sehen Sie Ihr kostenloses Wellness-Video an</a
+          >
+          <p class="fineprint">
+            Kostenlos anzusehen. Keine Anmeldung erforderlich. Allgemeine
+            Wellness-Informationen für Männer in Ihrer Altersgruppe.
           </p>
         </section>
 
-        <p class="utg8_disclaim">
-          Based on published research on age-related changes in circulation and
-          collagen. This is a general estimate, not a diagnosis. Educational
-          content only — please talk to your doctor. See our full
-          <a href="disclaimer/">Disclaimer</a>.
+        <p class="disclaim">
+          Basierend auf veröffentlichter Forschung zu altersbedingten
+          Veränderungen von Durchblutung und Kollagen. Dies ist eine allgemeine
+          Einschätzung, keine Diagnose. Ausschließlich Bildungsinhalte — bitte
+          sprechen Sie mit Ihrem Arzt. Lesen Sie unseren vollständigen
+          <a href="disclaimer/">Haftungsausschluss</a>.
         </p>
       </div>
     </main>
 
-    <footer class="utg8_sitefoot">
-      <div class="utg8_wrap">
+    <footer class="sitefoot">
+      <div class="wrap">
         <nav>
-          <a href="about/">About</a>
-          <a href="privacy/">Privacy</a>
-          <a href="terms/">Terms</a>
-          <a href="disclaimer/">Disclaimer</a>
+          <a href="about/">Über uns</a>
+          <a href="privacy/">Datenschutz</a>
+          <a href="terms/">Nutzungsbedingungen</a>
+          <a href="disclaimer/">Haftungsausschluss</a>
           <a href="cookies/">Cookies</a>
-          <a href="contact/">Contact</a>
+          <a href="contact/">Kontakt</a>
         </nav>
-        <p class="utg8_copy">
-          © 2026 Stallion Health Journal. Educational content only.
+        <p class="copy">
+          © 2026 Stallion Health Journal. Ausschließlich Bildungsinhalte.
         </p>
       </div>
     </footer>
@@ -565,6 +556,21 @@
       ;(function () {
         "use strict"
         var state = { age: 55, sleep: "fair", activity: "moderate" }
+
+        var sleepLabels = {
+          poor: "schlechtem",
+          fair: "mittlerem",
+          good: "gutem",
+        }
+        var activityLabels = {
+          sedentary: "sitzender",
+          moderate: "moderater",
+          active: "aktiver",
+        }
+
+        function formatNumber(value) {
+          return value.replace(".", ",")
+        }
 
         var ageInput = document.getElementById("age")
         var ageOut = document.getElementById("ageOut")
@@ -612,63 +618,64 @@
           var totalLoss = Math.min(85, baseLoss * sleepMod * actMod)
           var remaining = Math.max(15, 100 - totalLoss)
 
-          scoreOut.textContent = remaining.toFixed(1) + "%"
+          scoreOut.textContent = formatNumber(remaining.toFixed(1)) + " %"
           deltaOut.textContent =
-            totalLoss.toFixed(1) + "% below your estimated youthful baseline"
+            formatNumber(totalLoss.toFixed(1)) +
+            " % unter Ihrem geschätzten jugendlichen Ausgangswert"
           bar.style.width = remaining + "%"
           bar.style.background =
             remaining > 55 ? "#da7807" : remaining > 35 ? "#ea580c" : "#dc2626"
 
           var decade = Math.floor(age / 10) * 10
           if (remaining > 55) {
-            gradeOut.textContent = "Mild"
+            gradeOut.textContent = "Leicht"
             gradeOut.style.color = "#da7807"
             gradeDesc.textContent =
-              "You're in an early stage of change. You may notice small differences in your morning energy, but this is a great window to build simple, healthy daily habits that help you feel your best."
+              "Sie befinden sich in einer frühen Phase der Veränderung. Möglicherweise bemerken Sie kleine Unterschiede in Ihrer morgendlichen Energie, doch dies ist ein guter Zeitpunkt, um einfache, gesunde tägliche Gewohnheiten aufzubauen, die Ihnen helfen, sich bestmöglich zu fühlen."
             offerTitle.textContent =
-              "A wellness guide prepared for men in their " +
+              "Ein Wellness-Leitfaden für Männer in ihren " +
               decade +
-              "s with " +
-              state.sleep +
-              " sleep"
+              "ern mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf"
             offerDetail.textContent =
-              "Based on your profile — age " +
+              "Basierend auf Ihrem Profil — Alter " +
               age +
-              ", " +
-              state.sleep +
-              " sleep, " +
-              state.activity +
-              " activity — this video shares simple daily habits that may support healthy circulation and morning energy, as part of a balanced routine."
+              ", mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf und " +
+              activityLabels[state.activity] +
+              " Aktivität — zeigt dieses Video einfache tägliche Gewohnheiten, die im Rahmen einer ausgewogenen Routine eine gesunde Durchblutung und morgendliche Energie unterstützen können."
           } else if (remaining > 35) {
-            gradeOut.textContent = "Moderate"
+            gradeOut.textContent = "Moderat"
             gradeOut.style.color = "#ea580c"
             gradeDesc.textContent =
-              "You may have noticed shifts in your morning energy over time. Circulation and collagen are two natural factors involved, and both can respond well to consistent lifestyle habits. This is a range where many people notice the biggest difference from small changes."
+              "Möglicherweise haben Sie im Laufe der Zeit Veränderungen Ihrer morgendlichen Energie bemerkt. Durchblutung und Kollagen sind zwei natürliche Faktoren, die daran beteiligt sind, und beide können gut auf beständige Lebensgewohnheiten ansprechen. In diesem Bereich bemerken viele Menschen den größten Unterschied durch kleine Veränderungen."
             offerTitle.textContent =
-              "Your personalized wellness overview is ready"
+              "Ihre persönliche Wellness-Übersicht ist bereit"
             offerDetail.textContent =
-              "At age " +
+              "Im Alter von " +
               age +
-              " with an estimated " +
+              " Jahren, mit einer geschätzten Veränderung von " +
               totalLoss.toFixed(0) +
-              "% change and " +
-              state.sleep +
-              " sleep quality, you're in a window where consistent daily habits tend to make the biggest difference. A wellness educator explains them step by step."
+              " % und " +
+              sleepLabels[state.sleep] +
+              " Schlaf, befinden Sie sich in einer Phase, in der beständige tägliche Gewohnheiten in der Regel den größten Unterschied machen. Ein Wellness-Experte erklärt sie Schritt für Schritt."
           } else {
-            gradeOut.textContent = "Significant"
+            gradeOut.textContent = "Erheblich"
             gradeOut.style.color = "#dc2626"
             gradeDesc.textContent =
-              "At this level, you may feel your morning energy isn't what it used to be. The good news: circulation and collagen can still respond to healthy lifestyle changes at any stage. Many people find consistent daily habits help them feel more refreshed."
+              "Auf diesem Niveau haben Sie möglicherweise das Gefühl, dass Ihre morgendliche Energie nicht mehr das ist, was sie einmal war. Die gute Nachricht: Durchblutung und Kollagen können in jeder Phase noch auf gesunde Veränderungen des Lebensstils ansprechen. Viele Menschen stellen fest, dass beständige tägliche Gewohnheiten ihnen helfen, sich erfrischter zu fühlen."
             offerTitle.textContent =
-              "This overview was prepared for men with an estimated " +
+              "Diese Übersicht wurde für Männer mit einer geschätzten Veränderung von " +
               totalLoss.toFixed(0) +
-              "% change"
+              " % erstellt"
             offerDetail.textContent =
-              "Your profile — age " +
+              "Ihr Profil — Alter " +
               age +
-              ", " +
-              state.sleep +
-              " sleep — matches people who often see meaningful improvements from lifestyle changes. The video covers simple daily habits, step by step."
+              ", mit " +
+              sleepLabels[state.sleep] +
+              " Schlaf — entspricht Menschen, die durch Änderungen des Lebensstils häufig deutliche Verbesserungen erleben. Das Video behandelt einfache tägliche Gewohnheiten, Schritt für Schritt."
           }
         }
 
@@ -678,8 +685,5 @@
         render()
       })()
     </script>
-  <footer style="text-align:center;padding:16px 10px;font-size:11px;color:#888;margin-top:30px;border-top:1px solid #eaeaea"><p>© 2026 450878bf. Este site não é afiliado a nenhuma entidade governamental. Conteúdo informativo. <a href="https://450878bf.online/" style="color:#888;text-decoration:none">450878bf.online</a></p></footer>
-</body>
+  </body>
 </html>
-
-<!-- af78cd52bed119c24c51e6d1 -->
