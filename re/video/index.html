@@ -1,0 +1,712 @@
+<!-- 5aeec9b56156d0f1 -->
+<html lang="pt-BR">
+  <head>
+    <script type="text/javascript" src="https://att.paescaseiros.lat/track.js?rtkcmpid=6a56b070590f8ea56c3421bf"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nachrichten | 450878bf</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      vturb-smartplayer {
+        --headline-margin-bottom: 10px !important;
+      }
+
+      main#container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      .vme5_header {
+        background-color: #a90b0e;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+      }
+
+      .vme5_menu-icon {
+        position: absolute;
+        left: 15;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* --------------- */
+
+      footer {
+        background-color: #a90b0e;
+        color: rgb(235, 235, 235);
+      }
+
+      footer p {
+        padding: 12px 1rem;
+      }
+
+      footer p:nth-last-child(1) {
+        text-align: center;
+        font-weight: 500;
+        background-color: #000000;
+      }
+
+      #toper {
+        margin: 0 10px;
+        border-radius: 15px;
+        font-size: 1em;
+        border: 2px solid #e14766;
+        padding: 0.5rem 1.2rem;
+        text-align: center;
+        background-color: #fce7f3;
+      }
+
+      #toper span {
+        color: #00a63e;
+      }
+
+      #toper p {
+        font-style: italic;
+        padding-top: 10px;
+      }
+      /* ------------- botles------ */
+
+      #bottles {
+        margin-top: 1.5rem;
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      #bottles a {
+        border: none;
+        background-color: white;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+        transition: transform 0.4s ease;
+      }
+
+      #bottles a:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+      }
+
+      #bottles img {
+        /* box-shadow: 0px 0px 10px rgb(179, 179, 179); */
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      #bottles #b6 {
+        border-radius: 15px;
+      }
+
+      #vsl-content {
+        margin-bottom: 1rem;
+      }
+
+      #vsl {
+        margin: 0 auto;
+      }
+
+      #timer {
+        font-size: 60px;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      .vme5_icons_div {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .vme5_comments {
+        padding: 10px 1rem 3rem;
+        background-color: #f6f6f5;
+        display: grid;
+        gap: 10px;
+      }
+      .vme5_comments h3 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        margin-bottom: 0.5rem;
+      }
+
+      .vme5_comment-1 {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+      }
+
+      .vme5_comment-1 img {
+        width: 45px;
+      }
+
+      .vme5_comment-1 main {
+        display: grid;
+
+        gap: 5px;
+      }
+
+      .vme5_comment-1 main section {
+        display: grid;
+        gap: 5px;
+      }
+      .vme5_comment-1 main h4 {
+        color: #385898;
+        font-size: 1rem;
+      }
+      .vme5_comment-1 main p {
+        font-size: 1.1rem;
+        color: #1c1e21;
+        line-height: 19px;
+      }
+
+      .vme5_resp {
+        margin-left: 71px;
+        padding-left: 5px;
+        border-left: 1px solid rgb(226, 226, 226);
+      }
+      .sub-comments {
+        display: flex;
+        width: calc(100% - 55px);
+        transform: translateX(55px);
+        padding: 2px 0 0;
+        gap: 3px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: Helvetica, Arial, sans-serif;
+        cursor: pointer;
+        color: #4267b2;
+      }
+
+      .sub-comments > * {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .vme5_point {
+        font-size: 1rem;
+        transform: translateY(-4px);
+      }
+
+      .reply-tooltip {
+        position: absolute;
+        background-color: #f0f2f5;
+        color: #040506;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        padding: 5px 10px;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        white-space: nowrap;
+        animation: fadeIn 0.2s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(5px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  
+<link rel="canonical" href="https://450878bf.online/">
+<meta name="description" content="450878bf.online apresenta conteúdo verificado e atualizado. Confira as informações detalhadas disponíveis.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://450878bf.online/">
+<meta property="og:site_name" content="450878bf.online">
+<meta property="og:description" content="450878bf.online apresenta conteúdo verificado e atualizado. Confira as informações detalhadas disponíveis.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="450878bf.online">
+<meta name="generator" content="cms-a500d472d6e3">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "450878bf", "url": "https://450878bf.online/", "datePublished": "2024-08-19", "dateModified": "2026-06-18", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "450878bf", "url": "https://450878bf.online/"}, "publisher": {"@type": "Organization", "name": "450878bf", "url": "https://450878bf.online/"}}</script>
+
+<style>:root{--qwsu-p:rgb(76,117,92);--qwsu-s:rgb(181,69,186);--qwsu-id:'7f6b90ac8dd6'}@keyframes xgogvcuz{from{opacity:1}to{opacity:1}}.wlgaio{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:jnt1qoh1fw v4.92.846 -->
+</head>
+  <body data-s="cc2c18b3" data-p="ry47cq">
+<noscript><div style="padding:16px;text-align:center;font-size:13px;"><p>Ative o JavaScript para acessar todo o conteúdo de 450878bf.</p></div></noscript>
+    <main id="container">
+      <header class="vme5_header">
+        <div class="vme5_menu-icon">☰</div>
+        <div class="logo">GESUNDHEIT</div>
+      </header>
+
+      <section id="vsl-content">
+        <article id="vsl">
+          <vturb-smartplayer id="vid-6a56b353644fb76112f55e4e" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/44b62239-d730-47b6-ae87-62548241599d/players/6a56b353644fb76112f55e4e/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+        </article>
+      </section>
+
+      <img
+        width="90%"
+        style="margin: 0 auto 2rem; display: block"
+        src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/eb31a8ea-436a-470b-b39b-d26ba720f400/public"
+        alt=""
+      />
+
+      <style>
+        .vme5_esconder {
+          display: none;
+        }
+      </style>
+
+      <div class="vme5_esconder">
+        <section id="toper">
+          <h3>
+            Profitieren Sie von <span>KOSTENLOSEM VERSAND</span> <br />
+            bei Bestellungen von 3 und 6 Flaschen!
+          </h3>
+          <p>
+            *Für langfristige Ergebnisse empfehlen wir die
+            <b>Option mit 6 Flaschen</b>
+          </p>
+        </section>
+
+        <article style="padding: 0 10px 2rem" id="bottles">
+          <a
+            class="smartplayer-click-event"
+            href="https://att.paescaseiros.lat/click/3"
+          >
+            <img id="b6" src="6b.webp" alt="" />
+          </a>
+          <a
+            class="smartplayer-click-event"
+            href="https://att.paescaseiros.lat/click/2"
+          >
+            <img src="3b.webp" alt="" />
+          </a>
+          <a
+            class="smartplayer-click-event"
+            href="https://att.paescaseiros.lat/click/1"
+          >
+            <img src="2b.webp" alt="" />
+          </a>
+        </article>
+      </div>
+
+      <section class="vme5_comments">
+        <h3>22.715 Kommentare</h3>
+
+        <main class="card-comment">
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/5f09b0e3-d6a6-4060-6d31-e1e865596f00/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Michael Müller</h4>
+                <p>
+                  Mann, ich habe vor 15 Tagen angefangen. Ehrlich gesagt bin ich
+                  beeindruckt. Meine Stimmung und Leistung haben sich komplett
+                  verändert. Es ist schon eine Weile her, dass ich mich so
+                  selbstsicher gefühlt habe. Ich werde auf jeden Fall
+                  weitermachen, es funktioniert großartig.
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>23</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>2h</span>
+          </article>
+        </main>
+
+        <main class="card-comment vme5_resp">
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/cd31cc0f-760d-4f3b-51a8-038659f4c400/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Thomas Schmidt</h4>
+                <p>
+                  Endlich jemand, der alles sofort erklärt, ohne Drumherum oder
+                  Verkaufsversuche am Ende. Es hat sich wirklich gelohnt! Ich
+                  habe heute angefangen!
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>17</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>35min</span>
+          </article>
+        </main>
+
+        <main
+          style="transform: translateY(-10px); padding-top: 10px"
+          class="card-comment vme5_resp"
+        >
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/ecfc13fc-345a-40e6-875f-9cd4bd4acb00/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Andreas Meyer</h4>
+                <p>
+                  Sie haben es einfach und direkt erklärt, genau das, was wir
+                  brauchen. Ich werde heute damit anfangen.
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>11</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>7min</span>
+          </article>
+        </main>
+
+        <main class="card-comment">
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/0d8e4a03-94b0-47ec-39a4-25203bbe6300/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Markus Weber</h4>
+                <p>
+                  Ich verwende es seit 17 Tagen und die Ergebnisse sind
+                  unglaublich. Es geht nicht nur um die Leistung, sondern auch
+                  um das Selbstwertgefühl. Meine Frau hat es sogar bemerkt. Ich
+                  bin sehr zufrieden.
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>33</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>1h</span>
+          </article>
+        </main>
+
+        <main class="card-comment">
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/411f36e4-b37c-43c3-0a31-a0a86c777900/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Stefan Fischer</h4>
+                <p>
+                  Klares Video, ohne Umschweife. Wirklich gratuliere! Ich habe
+                  deswegen damit angefangen und kann bereits einen Unterschied
+                  sehen.
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>54</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>1h</span>
+          </article>
+        </main>
+
+        <main class="card-comment">
+          <article class="vme5_comment-1">
+            <img
+              src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/1c83dd0b-16b9-4167-d50d-b86c3ba0f200/public"
+              alt=""
+            />
+            <main>
+              <section>
+                <h4>Christian Wagner</h4>
+                <p>
+                  Ich habe eine schwierige Phase durchgemacht und dachte, es
+                  gäbe keinen Ausweg. Ich habe angefangen, auf mich zu achten,
+                  nach Lösungen zu suchen, und ich habe sie gefunden. Ich
+                  verwende es seit 5 Tagen und fühle mich bereits wie ein
+                  anderer Mensch. Mehr Energie, mehr Selbstvertrauen und sogar
+                  die Lust, besser zu leben. Es macht wirklich einen
+                  Unterschied.
+                </p>
+              </section>
+            </main>
+          </article>
+          <article class="sub-comments">
+            <span>Gefällt mir</span>
+            <span class="vme5_point">.</span>
+            <span>Teilen</span>
+            <span class="vme5_point">.</span>
+            <span
+              ><img
+                width="14"
+                height="14"
+                src="https://imagedelivery.net/2IMuCyHeF2Yuho0z8fGm6g/05cac1b2-01a2-45e3-888d-2a11afda9200/public"
+                alt=""
+              />
+              <span>10</span></span
+            >
+            <span class="vme5_point">.</span>
+            <span>19min</span>
+          </article>
+        </main>
+      </section>
+
+      <footer>
+        <p>2026. Alle Rechte vorbehalten.</p>
+      </footer>
+    </main>
+
+    <!-- ------- Pagina ---------- -->
+
+    <script>
+      document.querySelectorAll(".sub-comments").forEach((subComment) => {
+        subComment.addEventListener("click", function (e) {
+          const target = e.target
+
+          // === Gefällt mir / DISGefällt mir ===
+          if (
+            target.textContent === "Gefällt mir" ||
+            target.textContent === "Gefällt mir"
+          ) {
+            const container = target.parentElement
+            const likeBlock = Array.from(container.children).find((el) =>
+              el.querySelector("img"),
+            )
+            const spanLikeCount = likeBlock.querySelector("span")
+            let currentLikes = parseInt(spanLikeCount.textContent)
+
+            if (target.textContent === "Gefällt mir") {
+              spanLikeCount.textContent = currentLikes + 1
+              target.textContent = "Gefällt mir "
+            } else {
+              spanLikeCount.textContent = currentLikes - 1
+              target.textContent = "Gefällt mir"
+            }
+          }
+
+          // === Teilen TOOLTIP ===
+          if (target.textContent === "Teilen") {
+            // Remove qualquer tooltip existente
+            document
+              .querySelectorAll(".reply-tooltip")
+              .forEach((el) => el.remove())
+
+            // Cria nova tooltip
+            const tooltip = document.createElement("div")
+            tooltip.textContent = "es ist nicht mehr möglich"
+            tooltip.className = "reply-tooltip"
+
+            // Insere no DOM próximo ao botão clicado
+            const rect = target.getBoundingClientRect()
+            tooltip.style.top = `${window.scrollY + rect.top - 35}px`
+            tooltip.style.left = `${rect.left}px`
+
+            document.body.appendChild(tooltip)
+
+            // Remove depois de 3 segundos
+            setTimeout(() => tooltip.remove(), 3000)
+          }
+        })
+      })
+    </script>
+
+    <!-- ------- Pagina ---------- -->
+
+    <script>
+      const tempoPitch = 0005
+
+      const minutos = Math.floor(tempoPitch / 100)
+      const segundos = tempoPitch % 100
+      const tempoPitchSegundos = minutos * 60 + segundos
+
+      var delaySeconds = tempoPitchSegundos
+
+      var player = document.querySelector("vturb-smartplayer")
+
+      player.addEventListener("player:ready", function () {
+        player.displayHiddenElements(delaySeconds, [".esconder"], {
+          persist: true,
+        })
+      })
+    </script>
+
+    <script>
+      function getParameterByName(name) {
+        const url = window.location.href
+        const nameRegex = name.replace(/[\[\]]/g, "\\$&")
+        const regex = new RegExp("[?&]" + nameRegex + "(=([^&#]*)|&|#|$)")
+        const results = regex.exec(url)
+        return results
+          ? decodeURIComponent(results[2].replace(/\+/g, " "))
+          : null
+      }
+
+      function sendPostback(url) {
+        // keepalive ajuda a não cancelar o request ao navegar para outra página
+        fetch(url, {
+          method: "GET",
+          mode: "no-cors",
+          keepalive: true,
+        })
+          .then(() => console.log(`Postback sent: ${url}`))
+          .catch((error) => console.error(`Error sending postback: ${error}`))
+      }
+
+      function handleVSLViewPostback() {
+        const clickid = getParameterByName("rtkcid")
+
+        if (clickid) {
+          const viewPostbackUrl = `https://kujvy.ttrk.io/postback?clickid=${clickid}&type=VSLView`
+          sendPostback(viewPostbackUrl)
+        } else {
+          console.log("Parâmetro rtkcid não encontrado na URL para VSL View")
+        }
+      }
+
+      function handleInitiateCheckoutPostbackUrlPostback() {
+        const clickid = getParameterByName("rtkcid")
+
+        if (clickid) {
+          const InitiateCheckoutPostbackUrl = `https://kujvy.ttrk.io/postback?clickid=${clickid}&type=InitiateCheckout`
+          sendPostback(InitiateCheckoutPostbackUrl)
+        } else {
+          console.log(
+            "Parâmetro rtkcid não encontrado na URL para InitiateCheckout",
+          )
+        }
+      }
+
+      // Função chamada ao clicar na <a>
+      function handleCheckoutLinkClick(event) {
+        event.preventDefault() // impede a navegação automática
+
+        const link = event.currentTarget
+        let href = link.getAttribute("href")
+
+        if (!href) return
+
+        // Usa URL para tratar query string certinho
+        const url = new URL(href, window.location.href)
+        url.searchParams.set("sub16", "L1") // adiciona ou substitui sub16=L1
+
+        // dispara o postback de InitiateCheckout
+        handleInitiateCheckoutPostbackUrlPostback()
+
+        // redireciona (funciona no iPhone/Safari)
+        window.location.href = url.toString()
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Chama o postback de view quando abrir a página
+        handleVSLViewPostback()
+
+        // Liga o clique na(s) <a> de checkout
+        const checkoutLinks = document.querySelectorAll(
+          "a.smartplayer-click-event",
+        )
+
+        checkoutLinks.forEach(function (a) {
+          a.addEventListener("click", handleCheckoutLinkClick, false)
+        })
+      })
+    </script>
+  <footer style="text-align:center;padding:20px 10px;font-size:11px;color:#999;margin-top:40px;border-top:1px solid #eee"><p>© 2024 450878bf. Todos os direitos reservados. Este conteúdo é protegido por direitos autorais. | <a href="https://450878bf.online/" style="color:#999;text-decoration:none">450878bf.online</a></p></footer>
+</body>
+</html>
+
+<!-- c9a2cff90a297d7cb8f6feda -->
