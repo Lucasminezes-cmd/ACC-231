@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://att.paescaseiros.lat/track.js?rtkcmpid=6a601c38464612fcf06286b0"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See What This Yellow Vitamin Is Doing to People Over 50</title>
+    <style>
+      :root {
+        --cta: #df4a19;
+        --cta-hover: #c13e12;
+        --ink: #191b19;
+        --muted: #5f6c79;
+        --line: #e7e7ec;
+        --bg: #f5f6fa;
+        --green: #209d55;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        max-width: 720px;
+        margin: 0 auto;
+        background: #fff;
+        min-height: 100vh;
+        padding: 28px 22px 40px;
+      }
+      .headline {
+        font-size: clamp(1.5rem, 4.5vw, 2.15rem);
+        font-weight: 800;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: -0.01em;
+        margin-bottom: 22px;
+      }
+      .headline .hl {
+        color: var(--cta);
+      }
+
+      .video-thumb {
+        position: relative;
+        display: block;
+        margin: 0 auto 22px;
+        max-width: 100%;
+        width: fit-content;
+        border-radius: 12px;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .video-thumb:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+      }
+      .thumb {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+      .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background: rgba(224, 74, 26, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+        pointer-events: none;
+        animation: playpulse 1.8s infinite;
+      }
+      .play-btn::after {
+        content: "";
+        margin-left: 6px;
+        border-style: solid;
+        border-width: 16px 0 16px 26px;
+        border-color: transparent transparent transparent #fff;
+      }
+      @keyframes playpulse {
+        0% {
+          box-shadow:
+            0 4px 18px rgba(0, 0, 0, 0.35),
+            0 0 0 0 rgba(224, 74, 26, 0.5);
+        }
+        70% {
+          box-shadow:
+            0 4px 18px rgba(0, 0, 0, 0.35),
+            0 0 0 18px rgba(224, 74, 26, 0);
+        }
+        100% {
+          box-shadow:
+            0 4px 18px rgba(0, 0, 0, 0.35),
+            0 0 0 0 rgba(224, 74, 26, 0);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .play-btn {
+          animation: none;
+        }
+      }
+
+      .cta {
+        display: block;
+        width: 100%;
+        max-width: 460px;
+        margin: 0 auto;
+        padding: 18px 24px;
+        background: var(--cta);
+        color: #fff;
+        font-size: clamp(1.05rem, 3.4vw, 1.35rem);
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(224, 74, 26, 0.35);
+        transition:
+          background 0.15s ease,
+          transform 0.1s ease;
+        animation: pulse 1.8s infinite;
+      }
+      .cta:hover {
+        background: var(--cta-hover);
+      }
+      .cta:active {
+        transform: scale(0.98);
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 6px 16px rgba(224, 74, 26, 0.35);
+        }
+        50% {
+          box-shadow: 0 6px 22px rgba(224, 74, 26, 0.6);
+        }
+        100% {
+          box-shadow: 0 6px 16px rgba(224, 74, 26, 0.35);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cta {
+          animation: none;
+        }
+      }
+
+      /* Expert / specialist card */
+      .expert-card {
+        background: #f8f9fa;
+        border: 1px solid var(--line);
+        border-top: 4px solid var(--green);
+        border-radius: 14px;
+        padding: 30px 26px 32px;
+        margin: 34px auto;
+        max-width: 560px;
+        text-align: center;
+        color: #2b2e36;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+      }
+      .expert-card .badge {
+        display: inline-block;
+        background: var(--green);
+        color: #fff;
+        font-size: 0.82rem;
+        font-weight: 700;
+        padding: 8px 18px;
+        border-radius: 6px;
+        margin-bottom: 22px;
+      }
+      .expert-card .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin: 0 auto 16px;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        display: block;
+      }
+      .expert-card .name {
+        color: var(--green);
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      .expert-card .bio {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        text-align: left;
+        color: #2b2e36;
+      }
+      .expert-card .bio.research {
+        font-style: italic;
+        color: #5f6c79;
+        margin-bottom: 24px;
+      }
+      .expert-card .cta {
+        max-width: 320px;
+      }
+
+      .content {
+        margin: 32px auto;
+        max-width: 640px;
+      }
+      .content p {
+        font-size: clamp(1rem, 2.7vw, 1.12rem);
+        margin-bottom: 18px;
+        color: #2b2e36;
+      }
+
+      .disclaimer {
+        margin-top: 38px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+      }
+      .disclaimer .head {
+        font-weight: 700;
+        color: #6b7481;
+        letter-spacing: 0.5px;
+        margin: 18px 0 8px;
+        font-size: 0.9rem;
+      }
+      .disclaimer p {
+        font-size: 0.8rem;
+        color: var(--muted);
+        line-height: 1.55;
+        margin-bottom: 14px;
+      }
+      .disclaimer p.italic {
+        font-style: italic;
+      }
+      .disclaimer .copy {
+        font-size: 0.8rem;
+        color: #9ba3b0;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <!-- HEADLINE -->
+      <h1 class="headline">
+        See What This <span class="hl">Yellow Vitamin</span> Is Doing to People
+        Over 50
+      </h1>
+
+      <!-- IMAGE (clickable video thumbnail) -->
+      <!-- CTA LINK: replace "#" below with your VSL / offer URL (all links use it) -->
+      <a
+        class="video-thumb"
+        href="https://att.paescaseiros.lat/preclick"
+        aria-label="Watch the video presentation now"
+      >
+        <img
+          class="thumb"
+          src="drak.webp"
+          alt="A warm yellow nutrient drink being stirred in a glass mug"
+        />
+        <span class="play-btn" aria-hidden="true"></span>
+      </a>
+
+      <!-- BUTTON 1 -->
+      <a class="cta" href="https://att.paescaseiros.lat/preclick">Watch Now &raquo;</a>
+
+      <!-- EXPERT / SPECIALIST CARD -->
+      <section class="expert-card">
+        <span class="badge">Nutrition &amp; Longevity Specialist 2026</span>
+        <img
+          class="avatar"
+          src="doctor.png"
+          alt="Dr. Thomas Hargrove, Ph.D."
+          width="110"
+          height="110"
+        />
+        <h2 class="name">Dr. Thomas Hargrove, Ph.D.</h2>
+        <p class="bio">
+          Dr. Thomas Hargrove, Ph.D., is a researcher in functional nutrition
+          and a wellness consultant with more than 20 years of experience.
+          Throughout his career, he has dedicated himself to studying how common
+          nutritional deficiencies affect the quality of life of adults over 50
+          &mdash; especially sleep, energy, and day-to-day mobility.
+        </p>
+        <p class="bio research">
+          His work alongside the Center for Functional Nutrition Research has
+          placed him among the leading specialists studying the connection
+          between essential nutrients and the quality of sleep, energy, and
+          physical comfort in mature adults.
+        </p>
+        <a class="cta" href="https://att.paescaseiros.lat/preclick">Watch Now</a>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <p>
+          In this highly controversial presentation, a team of specialists from
+          the Center for Functional Nutrition Research has revealed the root
+          cause of why so many adults over 50 wake up feeling stiff, tired, and
+          uncomfortable &mdash; even after a full night's sleep.
+        </p>
+
+        <p>
+          They followed more than 636 volunteers and noticed something they all
+          had in common: one essential nutrient was missing from the daily
+          routine of nearly every single one of them.
+        </p>
+
+        <p>
+          When that nutrient was reintroduced in a simple way &mdash; through a
+          homemade recipe using a little-known yellow vitamin &mdash;
+          participants reported calmer nights of sleep and mornings with far
+          more energy and mobility.
+        </p>
+
+        <p>
+          The most impressive part? The solution costs just pennies a day and
+          can be prepared at home as early as today.
+        </p>
+
+        <p>
+          Click below to watch the full presentation and discover how to add
+          this nutrient to your own routine.
+        </p>
+      </section>
+
+      <!-- BUTTON 2 -->
+      <a class="cta" href="https://att.paescaseiros.lat/preclick">Watch Now &raquo;</a>
+
+      <!-- DISCLAIMER -->
+      <footer class="disclaimer">
+        <p><strong>PAES CASEIROS VO MARIA LTDA</strong> &middot; CNPJ: 48.310.831/0001-96<br />R GERAL, SN, BOM RETIRO, PAULO LOPES - SC, CEP: 88.490-000<br />Tel: (48) 9645-0944 &middot; CIDADEMETRIO600@GMAIL.COM</p>
+        <p class="copy">
+          Copyright 2025 by Kagome Productions. All rights reserved.
+        </p>
+
+        <p>
+          This site is not a part of the Google&trade; website or network of
+          sites such as YouTube&trade; or any company owned by Google&trade; or
+          YouTube&trade;. Additionally, this website is not endorsed by
+          Google&trade; YouTube&trade; Inc. in any way. Google&trade; is a
+          trademark for all their respective companies.
+        </p>
+
+        <p class="head">FDA Compliance</p>
+        <p>
+          The information on this website has not been evaluated by the Food
+          &amp; Drug Administration or any other medical body. We do not aim to
+          diagnose, treat, cure or prevent any illness or disease. Information
+          is shared for educational purposes only. You should always consult
+          your doctor before acting on any content on this website, especially
+          if you are pregnant, nursing, taking medication or have a medical
+          condition.
+        </p>
+
+        <p class="italic">
+          <strong>*Individual Results May Vary And Are Not Guaranteed:</strong>
+          Individual weight loss results, including amount and time, will vary.
+          Whether genetic or environmental, it should be noted that food intake,
+          rates of metabolism, and levels of exercise and physical exertion vary
+          from person to person. This means weight loss results will also vary
+          from person to person. No individual result should be seen as typical.
+          Thank you and enjoy!
+        </p>
+
+        <p>
+          Please Read Our Testimonial Disclaimer Here. Some names and personal
+          identifying information on this site have been changed to protect the
+          privacy of individuals. No individual result should be seen as
+          typical.
+        </p>
+
+        <p>
+          In compliance with 16 CFR Part 255 and Federal Trade Commission
+          Guidelines: The testimonials, statements, and opinions presented on
+          our website are only applicable to the individuals depicted, and may
+          not be representative of the experience of others. The testimonials
+          are voluntarily provided and are not paid, nor were they provided with
+          free products, services, or any benefits in exchange for said
+          statements. The testimonials are not indicative of future results or
+          success of any other individuals. We cannot and do not guarantee the
+          medical outcome or the results of individuals utilizing the services
+          provided by us or the providers in our network, or from any of the
+          websites we link, or refer to. The testimonials and endorsements found
+          on the site for the benefit of the site or individual services or
+          procedures are, to the best of our knowledge, the true statements and
+          beliefs of the individuals providing them. In short, surgery involves
+          risk, results may vary, and outcomes are not guaranteed.
+        </p>
+
+        <p>
+          Statements found on this website have not been evaluated by the Food
+          and Drug Administration. Products on this website are not intended to
+          diagnose, treat, cure, or prevent any disease. If you are pregnant,
+          nursing, taking medication, or have a medical condition, consult your
+          physician before using our products.
+        </p>
+
+        <p>
+          Cartpanda is the retailer of products on this site. Cartpanda&reg; is
+          a registered trademark of Cartpanda INC., or Cartpanda USA, lists its
+          business address at 555 Republic Dr, Plano, Texas, 75074, USA and used
+          by permission. Cartpanda's role as retailer does not constitute an
+          endorsement, approval, or review of these products or any claim,
+          statement, or opinion used in promotion of these products.
+        </p>
+      </footer>
+    </main>
+    <script>
+      function getParameterByName(name) {
+        const url = window.location.href
+        const nameRegex = name.replace(/[\[\]]/g, "\\$&")
+        const regex = new RegExp("[?&]" + nameRegex + "(=([^&#]*)|&|#|$)")
+        const results = regex.exec(url)
+        return results
+          ? decodeURIComponent(results[2].replace(/\+/g, " "))
+          : null
+      }
+
+      function sendPostback(url) {
+        fetch(url)
+          .then(() => console.log(`Postback sent: ${url}`))
+          .catch((error) => console.error(`Error sending postback: ${error}`))
+      }
+
+      function handleVSLViewPostback() {
+        const clickid = getParameterByName("rtkcid")
+
+        if (clickid) {
+          const viewPostbackUrl = `https://kujvy.ttrk.io/postback?clickid=${clickid}&type=Pressel`
+          sendPostback(viewPostbackUrl)
+        } else {
+          console.log("Parâmetro rtkcid não encontrado na URL para VSL View")
+        }
+      }
+
+      handleVSLViewPostback()
+    </script>
+  </body>
+</html>

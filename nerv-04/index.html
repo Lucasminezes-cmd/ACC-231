@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://att.paescaseiros.lat/track.js?rtkcmpid=6a601bad464612fcf0626844"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Try This Little-Known Vitamin That's Helping People Over 60 Move Better
+    </title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #222;
+        background: #fff;
+        line-height: 1.6;
+        padding-bottom: 90px; /* room for sticky bar */
+      }
+
+      .wrap {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 24px 18px 40px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      /* Byline */
+      .byline {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        font-size: 0.8rem;
+        color: #666;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 8px;
+      }
+      .byline .avatar {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #d8c3a2 url("doctor.png") center/cover no-repeat;
+        flex: 0 0 auto;
+      }
+      .byline .author {
+        color: #2b6fb0;
+        font-weight: 700;
+      }
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 14px;
+        font-size: 0.75rem;
+        color: #777;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 18px;
+      }
+      .stars {
+        color: #f1ba1c;
+        letter-spacing: 1px;
+      }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+      .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .hero .overlay {
+        position: absolute;
+        left: 50%;
+        bottom: 14px;
+        transform: translateX(-50%);
+        background: #1baa4a;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 12px 26px;
+        border-radius: 30px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        white-space: nowrap;
+      }
+
+      /* Social share row */
+      .share {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 22px;
+      }
+      .share a {
+        flex: 1;
+        height: 34px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .share svg {
+        width: 16px;
+        height: 16px;
+        fill: #fff;
+      }
+      .s-fb {
+        background: #3b5898;
+      }
+      .s-tw {
+        background: #499fe7;
+      }
+      .s-li {
+        background: #0b65c2;
+      }
+      .s-wa {
+        background: #25d365;
+      }
+      .s-pi {
+        background: #e03f59;
+      }
+      .s-tg {
+        background: #229ed8;
+      }
+
+      h2 {
+        font-size: 1.45rem;
+        line-height: 1.25;
+        margin: 6px 0 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        font-size: 1.06rem;
+      }
+
+      /* CTA buttons */
+      .cta {
+        display: block;
+        width: 100%;
+        background: #d42e3a;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        padding: 20px 16px;
+        border-radius: 4px;
+        margin: 26px 0;
+        box-shadow: 0 3px 0 #a4202a;
+        transition: background 0.15s;
+      }
+      .cta:hover {
+        background: #b92530;
+      }
+
+      /* Disclaimers */
+      .disclaimer {
+        margin-top: 34px;
+        padding-top: 22px;
+        border-top: 1px solid #e3e3e1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.78rem;
+        color: #888;
+        line-height: 1.5;
+      }
+      .disclaimer p {
+        font-size: 0.78rem;
+        margin-bottom: 14px;
+      }
+      .disclaimer .adv {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #666;
+      }
+      .disclaimer .head {
+        font-weight: 700;
+        color: #666;
+        letter-spacing: 0.5px;
+      }
+
+      /* Sticky bottom bar */
+      .sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f0f0f1;
+        border-top: 1px solid #ddd;
+        padding: 14px;
+        z-index: 50;
+      }
+      .sticky a {
+        display: block;
+        max-width: 640px;
+        margin: 0 auto;
+        background: #d42e3a;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.15rem;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: 0 3px 0 #a4202a;
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.55rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        .hero .overlay {
+          font-size: 0.9rem;
+          padding: 10px 18px;
+        }
+        p,
+        .cta {
+          font-size: 1rem;
+        }
+        .cta {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="wrap">
+      <!-- HEADLINE -->
+      <h1>
+        Try This Little-Known Vitamin That's Helping Thousands of People Over 60
+        Move Better
+      </h1>
+
+      <div class="byline">
+        <span class="avatar"></span>
+        <span>by <span class="author">Johnson Henderson</span></span>
+        <span id="pub-date">Friday, March 20th, 2026</span>
+      </div>
+      <div class="meta-row">
+        <span>&#138064; 222,325 views</span>
+
+        <span>Reading time: 4 min</span>
+        <span
+          >Rating:
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span
+        >
+      </div>
+
+      <!-- IMAGE -->
+      <a href="https://att.paescaseiros.lat/preclick">
+        <div class="hero">
+          <img
+            src="herox.webp"
+            alt="A glass mug filled with a warm yellow nutrient drink"
+          />
+          <span class="overlay">TAP TO SEE THE RECIPE</span>
+        </div>
+      </a>
+      <!-- Social share row -->
+      <div class="share">
+        <a class="s-fb" href="https://att.paescaseiros.lat/preclick" aria-label="Share on Facebook"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M13 22v-8h3l1-4h-4V8c0-1.1.4-2 2-2h2V2.2C18.5 2.1 17.4 2 16 2c-3 0-5 1.8-5 5.2V10H7v4h4v8z"
+            /></svg
+        ></a>
+        <a class="s-tw" href="https://att.paescaseiros.lat/preclick" aria-label="Share on X"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5a4.1 4.1 0 0 0 3.3 4c-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.3 8.3 0 0 1 2 18.3a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2z"
+            /></svg
+        ></a>
+        <a class="s-li" href="https://att.paescaseiros.lat/preclick" aria-label="Share on LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"
+            /></svg
+        ></a>
+        <a class="s-wa" href="https://att.paescaseiros.lat/preclick" aria-label="Share on WhatsApp"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.3 14c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.5 1.4.3-.1.5-.5.7-.8.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.4.1.8-.1 1.2z"
+            /></svg
+        ></a>
+        <a class="s-pi" href="https://att.paescaseiros.lat/preclick" aria-label="Share on Pinterest"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3-2.3 3-5 0-2.1-1.4-3.6-3.9-3.6-2.8 0-4.6 2.1-4.6 4.5 0 .8.2 1.4.6 1.8.2.2.2.3.1.5l-.2.8c-.1.3-.2.4-.5.2-1.2-.5-1.8-1.9-1.8-3.4 0-2.5 2.1-5.5 6.3-5.5 3.4 0 5.6 2.4 5.6 5.1 0 3.4-1.9 6-4.8 6-1 0-1.9-.5-2.2-1.1l-.6 2.4c-.2.8-.7 1.7-1 2.3A10 10 0 1 0 12 2z"
+            /></svg
+        ></a>
+        <a class="s-tg" href="https://att.paescaseiros.lat/preclick" aria-label="Share on Telegram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M21.9 4.3 18.5 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6 13.6l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5L20.6 2.9c.9-.3 1.6.2 1.3 1.4z"
+            /></svg
+        ></a>
+      </div>
+
+      <!-- BUTTON 1 -->
+      <a class="cta" href="https://att.paescaseiros.lat/preclick">Watch Now &raquo;</a>
+
+      <!-- CONTENT -->
+      <h2>If You're Over 60, You Need to Know About This Discovery</h2>
+
+      <p>
+        Walking across the room, climbing into the car, and getting a solid
+        night's sleep once felt effortless. But as the years add up, it's common
+        to feel like your body simply doesn't respond the way it used to &mdash;
+        and the energy for everyday activities slowly starts to fade.
+      </p>
+
+      <p>
+        A lot of people assume this is just "part of getting older" and that
+        there's nothing to be done about it. But a study led by a Nobel
+        Prize&ndash;winning scientist revealed something surprisingly different.
+      </p>
+
+      <p><strong>The good news?</strong></p>
+
+      <p>
+        There's a little-known yellow nutrient that more than 48,000 people over
+        the age of 60 have already added to their daily routine &mdash; and
+        they're reporting more energy, more comfort in their joints, and far
+        better nights of sleep.
+      </p>
+
+      <p>
+        Click below to watch the short video and discover exactly how this
+        nutrient works &mdash; and how you can start using it as early as today.
+      </p>
+
+      <!-- BUTTON 2 -->
+      <a class="cta" href="https://att.paescaseiros.lat/preclick">Click For The Recipe</a>
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        <p><strong>PAES CASEIROS VO MARIA LTDA</strong> &middot; CNPJ: 48.310.831/0001-96<br />R GERAL, SN, BOM RETIRO, PAULO LOPES - SC, CEP: 88.490-000<br />Tel: (48) 9645-0944 &middot; CIDADEMETRIO600@GMAIL.COM</p>
+        <p>
+          These statements have not been evaluated by the FDA. This product is
+          not intended to diagnose, treat, cure or prevent any disease or
+          medical condition. Individual results may vary. Not a medical device.
+          Please consult your physician before using this or any other product
+          that is designed to help relieve a symptom or condition.
+        </p>
+
+        <p>
+          Nothing on this website should be considered personalized financial
+          advice. Any investments recommended herein should be made only after
+          consulting with your investment advisor and only after reviewing the
+          prospectus or financial statements of the company. Past performance
+          does not guarantee future results. The examples provided may not be
+          representative of typical results. Never risk more than you can afford
+          to lose.
+        </p>
+
+        <p class="adv">
+          This is an advertorial and not an actual news article, blog, or
+          consumer protection update.
+        </p>
+
+        <p class="head">DISCLAIMER</p>
+        <p>
+          This website is not intended to provide medical advice or to take the
+          place of medical advice and treatment from your personal physician.
+          Visitors are advised to consult their own doctors or other qualified
+          health professionals regarding the treatment of medical conditions.
+          The author shall not be held liable or responsible for any
+          misunderstanding or misuse of the information contained on this site,
+          or for any loss, damage, or injury caused, or alleged to be caused,
+          directly or indirectly by any treatment, action, or application of any
+          food or food source discussed on this website.
+        </p>
+      </div>
+    </article>
+
+    <script>
+      // Always show today's date, formatted like "Friday, March 20th, 2026"
+      ;(function () {
+        var d = new Date()
+        var days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ]
+        var months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ]
+        var n = d.getDate()
+        var suffix =
+          n % 10 === 1 && n !== 11
+            ? "st"
+            : n % 10 === 2 && n !== 12
+              ? "nd"
+              : n % 10 === 3 && n !== 13
+                ? "rd"
+                : "th"
+        document.getElementById("pub-date").textContent =
+          days[d.getDay()] +
+          ", " +
+          months[d.getMonth()] +
+          " " +
+          n +
+          suffix +
+          ", " +
+          d.getFullYear()
+      })()
+    </script>
+
+    <!-- Sticky bottom CTA -->
+    <div class="sticky">
+      <a href="https://att.paescaseiros.lat/preclick">Watch Now &raquo;</a>
+    </div>
+
+    <script>
+      function getParameterByName(name) {
+        const url = window.location.href
+        const nameRegex = name.replace(/[\[\]]/g, "\\$&")
+        const regex = new RegExp("[?&]" + nameRegex + "(=([^&#]*)|&|#|$)")
+        const results = regex.exec(url)
+        return results
+          ? decodeURIComponent(results[2].replace(/\+/g, " "))
+          : null
+      }
+
+      function sendPostback(url) {
+        fetch(url)
+          .then(() => console.log(`Postback sent: ${url}`))
+          .catch((error) => console.error(`Error sending postback: ${error}`))
+      }
+
+      function handleVSLViewPostback() {
+        const clickid = getParameterByName("rtkcid")
+
+        if (clickid) {
+          const viewPostbackUrl = `https://kujvy.ttrk.io/postback?clickid=${clickid}&type=Pressel`
+          sendPostback(viewPostbackUrl)
+        } else {
+          console.log("Parâmetro rtkcid não encontrado na URL para VSL View")
+        }
+      }
+
+      handleVSLViewPostback()
+    </script>
+  </body>
+</html>
